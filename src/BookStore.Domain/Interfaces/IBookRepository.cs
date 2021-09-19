@@ -1,10 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
+using BookStore.Domain.Models;
 
 namespace BookStore.Domain.Interfaces
 {
-    class IBookRepository
+    public interface IBookRepository : IRepository<Book>
     {
+
+        new Task<List<Book>> GetAll();
+        new Task<Book> GetById(int id);
+
+        Task<IEnumerable<Book>> GetBooksByCategory(int categoryId);
+        Task<IEnumerable<Book>> SearchBookByCategory(string searchedValue);
     }
 }

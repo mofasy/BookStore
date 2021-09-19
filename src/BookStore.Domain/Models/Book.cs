@@ -13,7 +13,6 @@ namespace BookStore.Domain.Models
         public DateTime PublishDate { get; set; }
         public int CategoryId { get; set; }
 
-
         /* EF Relation */
         public Category Category { get; set; }
     }
