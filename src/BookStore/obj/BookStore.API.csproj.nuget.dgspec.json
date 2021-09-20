@@ -175,6 +175,9 @@
             "projectReferences": {
               "C:\\Users\\FahadzPC\\source\\repos\\BookStore\\BookStore.Infrastructure\\BookStore.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\FahadzPC\\source\\repos\\BookStore\\BookStore.Infrastructure\\BookStore.Infrastructure.csproj"
+              },
+              "C:\\Users\\FahadzPC\\source\\repos\\BookStore\\src\\BookStore.Domain\\BookStore.Domain.csproj": {
+                "projectPath": "C:\\Users\\FahadzPC\\source\\repos\\BookStore\\src\\BookStore.Domain\\BookStore.Domain.csproj"
               }
             }
           }
@@ -188,6 +191,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -197,6 +204,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.1, )"
             }
           },
           "imports": [
